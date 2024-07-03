@@ -6,7 +6,7 @@ body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px;
   --bar-width: 60px;
   --bar-height: 8px;
   --hamburger-gap: 6px;
-  --foreground: #333;
+  --foreground: #333;a
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
