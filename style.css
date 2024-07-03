@@ -104,7 +104,6 @@ body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px;
 
 /* Definição de variáveis */
 :root{
-  --cor-texto: #121212;
   --cor-texto-branco: #FEFEFE;
   --fundo-header: #BFA031;
   --altura-menu: 6rem;
@@ -140,17 +139,6 @@ header{
   position: relative;
   transition: all ease-in-out 0.5s;
 }
-
-nav{
-  background: #333;
-  height: 100%;
-  left: 0;  
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  transition: all ease-in-out .3s;
-}
-
 nav ul{
   list-style: none;
   padding: 2rem;
