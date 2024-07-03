@@ -1,97 +1,128 @@
-/* ! Reset */
-body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
-
-:root {
-  --background: #fff;
-  --bar-width: 60px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
-  --foreground: #333;
-  --hamburger-margin: 8px;
-  --animation-timing: 200ms ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
-
-.hamburger-menu {
-  --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  
-  display: flex;
-  flex-direction: column;
-  gap: var(--hamburger-gap);
-  width: max-content;
-  position: absolute;
-  top: var(--hamburger-margin);
-  left: var(--hamburger-margin);
-  z-index: 2;
-  cursor: pointer;
-}
-
-.hamburger-menu:has(input:checked) {
-  --foreground: white;
-  --background: #333;
-}
-
-.hamburger-menu:has(input:checked)::before,
-.hamburger-menu:has(input:checked)::after,
-.hamburger-menu input:focus-visible {
-  border: 1px solid var(--background);
-  box-shadow: 0 0 0 1px var(--foreground);
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-  content: "";
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: var(--foreground);
-  border-radius: 9999px;
-  transition: opacity var(--animation-timing), 
-    width var(--animation-timing), 
-    rotate var(--animation-timing), 
-    translate var(--animation-timing),
-    background-color var(--animation-timing);
-  transform-origin: left center;
-}
-
-.hamburger-menu input {
-  opacity: 1;
-  appearance: none;
-  padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
-  outline: none;
-  pointer-events: none;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
-
-.hamburger-menu:has(input:checked)::before {
-  width: var(--x-width);
-  rotate: 45deg;
-  translate: 0 calc(var(--bar-height) / -2);
+header {
+  background-color: #BFA031;
+  padding: 10px 0;
+  text-align: center;
 }
-
-.hamburger-menu:has(input:checked)::after {
-  rotate: -45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / 2);
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #fff;
 }
-
-.hamburger-menu input:checked {
-  opacity: 0;
-  width: 0;
+nav {
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-
-.sidebar{
-  transition: translate var(--animation-timing);
-  translate: -100%;
-  padding: 0.5rem 1rem;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-  background-color: var(--foreground);
-  color: var(--background);
-  max-width: 10rem;
-  min-height: 100vh;
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
 }
-
-.hamburger-menu:has(input:checked) + .sidebar {
-  translate: 0;
+nav a:hover {
+  background-color: #ccc;
 }
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+.sidebar {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+}
+.content {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #8bc34a;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>A IMPORTÂNCIA DO MILHO PARA A AGRICULTURA: </h1>
+</header>
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#tipos">Tipos de Milho</a>
+<a href="#receitas">Receitas com Milho</a>
+<a href="#contato">Contato</a>
+</nav>
+<div class="container">
+<section id="sobre" class="main">
+  <div class="sidebar">
+      <h2>Sobre</h2>
+      <p>Descubra tudo sobre o mundo fascinante dos milhos com Rosa Campos.</p>
+  </div>
+  <div class="content">
+      <h2>Bem-vindo ao RosaCampos!</h2>
+      <p>Nosso site é dedicado a explorar diferentes aspectos do milho, desde seus tipos até deliciosas receitas que você pode experimentar em casa.</p>
+      <p>Exploraremos as variedades de milho, seus usos culinários, e muito mais.</p>
+  </div>
+</section>
+
+<section id="tipos" class="main">
+  <div class="sidebar">
+      <h2>Tipos de Milho</h2>
+      <ul>
+          <li>Milho Doce</li>
+          <li>Milho de Pipoca</li>
+          <li>Milho Ornamental</li>
+      </ul>
+  </div>
+  <div class="content">
+      <h2>Tipos de Milho</h2>
+      <p>Aqui você encontrará informações sobre diferentes tipos de milho, incluindo milho doce, milho de pipoca e milho ornamental.</p>
+  </div>
+</section>
+
+<section id="receitas" class="main">
+  <div class="sidebar">
+      <h2>Receitas com Milho</h2>
+      <ul>
+          <li>Receita 1</li>
+          <li>Receita 2</li>
+          <li>Receita 3</li>
+      </ul>
+  </div>
+  <div class="content">
+      <h2>Receitas com Milho</h2>
+      <p>Descubra receitas deliciosas utilizando milho, desde pratos tradicionais até inovações culinárias.</p>
+  </div>
+</section>
+</div>
+
+<footer>
+<p>&copy; 2024 RosaCampos - Explorando o Mundo dos Milhos</p>
+</footer>
+
+</body>
+</html>
