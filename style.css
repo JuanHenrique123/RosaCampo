@@ -17,8 +17,6 @@ body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px;
   
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
   gap: var(--hamburger-gap);
   width: max-content;
   position: absolute;
