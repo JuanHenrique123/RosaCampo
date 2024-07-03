@@ -1,115 +1,15 @@
-#navigation {
-	height: 3em;
-	background: #000;
-	color: #fff;
-}
+<label for="x" class="hamburger-menu">
+  <input id="x" type="checkbox">
+</label>
 
-#top-nav {
-	margin: 0;
-	padding: 0 1em;
-	height: 100%;
-	list-style: none;
-}
 
-#top-nav > li {
-	float: left;
-	height: 100%;
-	margin-right: 1em;
-}
+<aside class="sidebar">
+  <nav>
+    <div>This</div>
+    <div>Is</div>
+    <div>The</div>
+    <div>Sidebar</div>
+  </nav>
+</aside>
 
-#top-nav > li > a {
-	color: #fff;
-	display: block;
-	padding: 0 0.5em;
-	height: 100%;
-	line-height: 3;
-	text-decoration: none;
-	text-transform: uppercase;
-}
 
-#top-nav > li.sub {
-	position: relative;
-}
-
-#top-nav > li.sub ul.sub-nav {
-	position: absolute;
-	top: -1000em;
-	left: 0;
-	padding: 0.5em 0;
-	margin: 0;
-	list-style: none;
-	width: 15em;
-	background: #000;
-}
-
-#top-nav > li.sub ul.sub-nav > li {
-	display: block;
-}
-
-#top-nav > li.sub ul.sub-nav > li > a {
-	display: block;
-	padding: 0.5em;
-	color: #fff;
-	text-decoration: none;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega {
-	position: relative;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega div.mega {
-	width: 30em;
-	background: #666;
-	color: #fff;
-	position: absolute;
-	top: 0.5em;
-	left: -1000em;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega div.mega-content {
-	float: left;
-	width: 12em;
-	padding: 1em;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega div.mega-image {
-	float: right;
-	width: 12em;
-	padding: 1em;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega h3 {
-	text-transform: uppercase;
-	margin: 0 0 0.4em 0;
-	font-size: 1.2em;
-	padding-bottom: 0.2em;
-	border-bottom: 1px dotted;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega p {
-	margin: 0.5em 0;
-	line-height: 1.4;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega .more-link {
-	display: inline-block;
-	padding: 0.3em 1.2em;
-	background: #08c;
-	color: #fff;
-	text-decoration: none;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
-
-#top-nav > li.sub ul.sub-nav > li.sub-mega:hover div.mega {
-	left: 15em;
-}
-
-#top-nav > li.sub:hover ul.sub-nav {
-	top: 3em;
-}
