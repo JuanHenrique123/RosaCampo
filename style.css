@@ -26,7 +26,8 @@ header {
 h1 {
     color: #333;
     <button onclick="changeImage()">Mudar Imagem</button>
-    
+    <img id="myImage" src="URL_DA_IMAGEM" alt="Descrição da Imagem">
+}
 
 main {
     max-width: 800px;
