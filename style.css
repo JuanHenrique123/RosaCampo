@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+    text-decoration: nome;
+    outline: nome;
+    font-family: 'Montserrat', sans-serit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f5a802;
+    padding: 10px 0;
+}
+
+h1 {
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 3px 0;
+    background-color: #f3c600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
