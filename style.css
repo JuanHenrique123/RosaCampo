@@ -1,0 +1,165 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte geral */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #f9a825;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Título principal */
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Seção de introdução */
+.introducao {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introducao img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Seção de ingredientes */
+.ingredientes {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ingredientes h2 {
+    font-size: 2rem;
+    color: #f9a825;
+    margin-bottom: 15px;
+}
+
+.ingredientes ul {
+    list-style-type: none;
+}
+
+.ingredientes li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Seção de modo de preparo */
+.modo-preparo {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modo-preparo h2 {
+    font-size: 2rem;
+    color: #f9a825;
+    margin-bottom: 15px;
+}
+
+.modo-preparo ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.modo-preparo li {
+    margin-bottom: 15px;
+}
+
+.modo-preparo h3 {
+    font-size: 1.5rem;
+    color: #f57c00;
+}
+
+.modo-preparo p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Seção de dicas */
+.dicas {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dicas h2 {
+    font-size: 2rem;
+    color: #f9a825;
+    margin-bottom: 15px;
+}
+
+.dicas ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.dicas li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .ingredientes h2,
+    .modo-preparo h2,
+    .dicas h2 {
+        font-size: 1.8rem;
+    }
+
+    .ingredientes li,
+    .modo-preparo p,
+    .dicas li {
+        font-size: 1rem;
+    }
+
+    .modo-preparo ol {
+        padding-left: 15px;
+    }
+}
